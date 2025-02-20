@@ -1,0 +1,229 @@
+/* Global Styles */
+@font-face {
+    font-family: "PPMori-Regular";
+    src: url("fonts/PPMori-Regular.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    font-family: "PPMori-Regular", Times, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1c391b;
+    background-color: #ffffff;
+    font-size: 56px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 30%;
+    font-weight: normal;
+    font-size: 56px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #fffcd1;
+    padding: 20px 40px;
+}
+
+.nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+}
+
+.inquire-btn {
+    background-color: #d94506;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 33px 10px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    padding: 4 50%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #003caa;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #f7f9e8;
+    text-align: left;
+    columns: 2;
+    font-size: 70px;
+    font-weight: bold;
+    color: #056eeb;
+    margin-bottom: 10px;
+}
+
+/* Approach Section */
+.approach {
+    display: flex;
+    padding: 30px 30px;
+    background-color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    color: #413c38;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 36px;
+    
+}
+
+.text h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #413c38;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "PPMori-Regular", sans-serif;
+}
+
+body {
+  background: #1f1f47
+}
+
+.container {
+  min-height: 40vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  min-height: 250px;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  color: whitesmoke;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: #fa709a;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 184, 255,0.42) 31.77%,
+    #5c9df1 100%
+  );
+  mix-blend-mode: color-dodge;
+  -webkit-animation: move 25s infinite alternate;
+          animation: move 25s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+
+.blob:hover {
+  width: 520px;
+  height: 520px;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  box-shadow:
+    inset 0 0 0 5px rgba(255,255,255, 0.6),
+    inset 100px 100px 0 0px #fa709a,
+    inset 200px 200px 0 0px #784ba8,
+    inset 300px 300px 0 0px #2b86c5;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
